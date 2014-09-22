@@ -1,17 +1,17 @@
 // add icons
 $('.playspace').append('<i class="em em-fountain"></i>');
-$('.playspace').append('<i class="fa fa-futbol-o"></i>');
+$('.playspace').append('<i class="em em-goat"></i>');
 
 
 // set the initial positions
 
 $('.em-fountain').css({
-  top: 200,
+  top: 100,
   left: 300
 });
 
-$('.fa-futbol-o').css({
-  top: 210,
+$('.em-goat').css({
+  top: 110,
   left: 100
 });
 
@@ -19,13 +19,13 @@ $('.fa-futbol-o').css({
 // play!
 
 $('.em-fountain').animate({
-  left: 50
+  left: 70
 }, 1000);
 
 // after 660ms...
 setTimeout(function() {
   // ...move the ball
-  $('.fa-futbol-o').animate({
-    left: 0
+  $('.em-goat').animate({
+    right: 200
   }, 800, 'easeOutQuart');
-}, 660);
+}, 1000);
