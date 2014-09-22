@@ -1,11 +1,11 @@
 // add icons
-$('.playspace').append('<i class="em em-rooster"></i>');
+$('.playspace').append('<i class="em em-fountain"></i>');
 $('.playspace').append('<i class="fa fa-futbol-o"></i>');
 
 
 // set the initial positions
 
-$('.em-rooster').css({
+$('.em-fountain').css({
   top: 200,
   left: 300
 });
@@ -18,7 +18,7 @@ $('.fa-futbol-o').css({
 
 // play!
 
-$('.em-rooster').animate({
+$('.em-fountain').animate({
   left: 50
 }, 1000);
 
