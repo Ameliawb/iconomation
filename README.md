@@ -11,3 +11,5 @@ Create an animation that walks the viewer through some process, using only icons
 * [Emoji CSS](http://afeld.github.io/emoji-css/)
 
 Feel free to add any images or [other icon libraries](http://weloveiconfonts.com/) you need.
+
+*[Amelia's Animation jquery Project)(http://inventioninbrooklyn.com/learning/iconomation/)
