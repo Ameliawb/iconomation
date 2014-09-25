@@ -1,22 +1,22 @@
 body {
 background-image: url("paper.jpg");
 }
-
-.green {
+box {position: absolute;}
+#green {
     background: #d6ef39;
     height: 100px;
     width: 100px;
     margin: 10px;
     position: relative;
 }
-.blue {
+#blue {
     background: #00a5c6;
     height: 100px;
     width: 100px;
     margin: 10px;
     position: relative;
 }
-.red {
+#red {
     background: #ce007b;
     height: 100px;
     width: 100px;
