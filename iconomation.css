@@ -1,9 +1,25 @@
-.box {
-     background: #98bf21;
-     height: 100px;
-     width: 100px;
-     margin: 6px;
-     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-     position:absolute;
- }
- 
+body {
+background-image: url("paper.jpg");
+}
+
+.green {
+    background: #d6ef39;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+}
+.blue {
+    background: #00a5c6;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+}
+.red {
+    background: #ce007b;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+}
