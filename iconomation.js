@@ -43,6 +43,15 @@ $(".button5").click(function() {
         height: '150px',
         width: '150px'
     });
+    $(".green").animate({
+        left: '650px',
+    });
+     $(".red").animate({
+        left: '150px',
+    });
+     $(".blue").animate({
+        right: '150px',
+    });
     $(".button6").click(function() {
     $("div").animate({
         left: '0px',
@@ -54,3 +63,20 @@ $(".button5").click(function() {
 });
     });
 });
+
+
+function moveDiv() {
+    var $div = $("#random");
+    
+    $div.fadeOut(1000, function() {
+        var maxLeft = $(window).width() - $div.width();
+        var maxTop = $(window).height() - $div.height();
+        var leftPos = Math.floor(Math.random() * (maxLeft + 1))
+        var topPos = Math.floor(Math.random() * (maxTop + 1))
+     
+        $div.css({ left: leftPos, top: topPos }).fadeIn(1000);
+    });
+};
+
+moveDiv();
+setInterval(moveDiv, 5000);
