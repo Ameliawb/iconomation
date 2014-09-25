@@ -35,14 +35,12 @@ $(document).ready(function() {
         });
     });
     $(".button6").click(function() {
-        $(".box").animate({
-            height: '150px',
-            width: '150px'
-        });
+        $('.box').removeAttr('style'); 
     }); 
         $(".button5").click(function() {
-            var h = $(window).height();
-            var w = $(window).width();
+            $(".box").css({ opacity: 0.7 });
+            var h = $(window).height()-100;
+            var w = $(window).width()-100;
             $('.box').each(function() {
                 var originalOffset = $(this).position(),
                     $this = $(this),
@@ -52,11 +50,11 @@ $(document).ready(function() {
                 $(this).animate({
                     "left": tLeft,
                     "top": tTop
-                }, 5000, function() {
+                }, 3500, function() {
                     $this.animate({
                         "left": originalOffset.left,
                         "top": originalOffset.top
-                    }, 5000);
+                    }, 2000);
                 });
             });
         });

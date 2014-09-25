@@ -1,7 +1,8 @@
 body {
 background-image: url("paper.jpg");
 }
-box {position: absolute;}
+box {
+    position: relative;}
 #green {
     background: #d6ef39;
     height: 100px;
