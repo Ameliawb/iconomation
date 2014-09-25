@@ -1,36 +1,36 @@
 $(document).ready(function() {
     $(".button").click(function() {
         $("#green").animate({
-            height: "200px"
-        });
-        $("#blue").animate({
             height: "300px"
         });
-        $("#red").animate({
+        $("#blue").animate({
             height: "400px"
+        });
+        $("#red").animate({
+            height: "500px"
         });
     });
         $(".button2").click(function() {
         $(".box").animate({
             height: '50px',
-            width: '200px'
+            width: '300px'
         });
     });
 
     $(".button3").click(function() {
         $("#green").animate({
-            width: "400px"
-        });
-        $("#blue").animate({
             width: "500px"
         });
-        $("#red").animate({
+        $("#blue").animate({
             width: "600px"
+        });
+        $("#red").animate({
+            width: "700px"
         });
     });
     $(".button4").click(function() {
         $(".box").animate({
-            height: '200px',
+            height: '300px',
             width: '50px'
         });
     });
@@ -38,9 +38,9 @@ $(document).ready(function() {
         $('.box').removeAttr('style'); 
     }); 
         $(".button5").click(function() {
-            $(".box").css({ opacity: 0.7 });
-            var h = $(window).height()-100;
-            var w = $(window).width()-100;
+            $(".box").css({ opacity: 0.8 });
+            var h = $(window).height();
+            var w = $(window).width();
             $('.box').each(function() {
                 var originalOffset = $(this).position(),
                     $this = $(this),
@@ -50,11 +50,11 @@ $(document).ready(function() {
                 $(this).animate({
                     "left": tLeft,
                     "top": tTop
-                }, 3500, function() {
+                }, 3000, function() {
                     $this.animate({
                         "left": originalOffset.left,
-                        "top": originalOffset.top
-                    }, 2000);
+                        "top": originalOffset.top+50
+                    }, 5000);
                 });
             });
         });
