@@ -1,11 +1,11 @@
 $(document).ready(function() {
-        $("#button").click(function() {
+        $(".button").click(function() {
             $(".box").animate({
-                height: "300px"
+                height: "400px"
             });
         });
-        $("#button2").click(function() {
+        $(".button2").click(function() {
             $(".box").animate({
-                height: "100px"
+                height: "50px"
             });
         });
