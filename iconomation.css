@@ -1,8 +1,9 @@
-div {
+.box {
      background: #98bf21;
      height: 100px;
      width: 100px;
      margin: 6px;
      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     position:absolute;
  }
  
